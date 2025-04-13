@@ -1,0 +1,16 @@
+User:
+  type: object
+  properties:
+    id:
+      type: integer
+      format: int64
+    name:
+      type: string
+      maxLength: 10
+    email:
+      type: string
+      format: email
+  required:
+    - id
+    - name
+    - email

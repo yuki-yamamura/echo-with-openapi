@@ -1,0 +1,21 @@
+GetUserParameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+      format: int64
+UpdateUserParameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+      format: int64
+DeleteUserParameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+      format: int64

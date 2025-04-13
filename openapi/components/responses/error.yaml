@@ -1,0 +1,8 @@
+ErrorResponseData:
+  description: Response containing an error
+  content:
+    application/json:
+      schema:
+        $ref: "../schemas/error.yaml#/Error"
+      example:
+        message: "Bad Request"
