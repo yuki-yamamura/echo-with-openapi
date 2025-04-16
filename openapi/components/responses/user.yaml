@@ -1,0 +1,46 @@
+CreateUserResponseData:
+  description: Response containing the created user data
+  content:
+    application/json:
+      schema:
+        $ref: "../schemas/user.yaml#/User"
+      example:
+        id: "123456789"
+        "name": "Bob"
+        email: "bob@example.com"
+GetUsersResponseData:
+  description: Response containing a list of users
+  content:
+    application/json:
+      schema:
+        type: array
+        items:
+          $ref: "../schemas/user.yaml#/User"
+        example:
+          - id: "987654321"
+            name: "Alice"
+            email: "alice@example.com"
+          - id: "123456789"
+            name: "Bob"
+            email: "bob@example.com"
+GetUserResponseData:
+  description: Response containing a single user's data
+  content:
+    application/json:
+      schema:
+        $ref: "../schemas/user.yaml#/User"
+      example:
+        id: "123456789"
+        "name": "Bob"
+        email: "bob@example.com"
+
+UpdateUserResponseData:
+  description: Response containing the updated user data
+  content:
+    application/json:
+      schema:
+        $ref: "../schemas/user.yaml#/User"
+      example:
+        id: "123456789"
+        "name": "Bob"
+        email: "bob@example.com"

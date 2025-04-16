@@ -1,0 +1,37 @@
+get:
+  summary: Returns a user.
+  parameters:
+    $ref: "../../components/parameters/user.yaml#/GetUserParameters"
+  responses:
+    "200":
+      $ref: "../../components/responses/user.yaml#/GetUserResponseData"
+    "400":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+    "404":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+    "500":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+put:
+  summary: Updates a user.
+  parameters:
+    $ref: "../../components/parameters/user.yaml#/UpdateUserParameters"
+  requestBody:
+    $ref: "../../components/requestBodies/user.yaml#/UpdateUserRequestBody"
+  responses:
+    "200":
+      $ref: "../../components/responses/user.yaml#/UpdateUserResponseData"
+    "404":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+    "500":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+delete:
+  summary: Deletes a user.
+  parameters:
+    $ref: "../../components/parameters/user.yaml#/DeleteUserParameters"
+  responses:
+    "204":
+      description: No content
+    "404":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+    "500":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"

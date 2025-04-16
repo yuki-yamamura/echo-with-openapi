@@ -1,0 +1,10 @@
+openapi: 3.0.0
+info:
+  title: Test API
+  version: 1.0.0
+
+paths:
+  /users:
+    $ref: "./paths/users/index.yaml"
+  /users/{id}:
+    $ref: "./paths/users/[id].yaml"

@@ -1,0 +1,19 @@
+get:
+  summary: Returns a list of users.
+  responses:
+    "200":
+      $ref: "../../components/responses/user.yaml#/GetUsersResponseData"
+    "500":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+
+post:
+  summary: Creates a new user.
+  requestBody:
+    $ref: "../../components/requestBodies/user.yaml#/CreateUserRequestBody"
+  responses:
+    "201":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+    "400":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
+    "500":
+      $ref: "../../components/responses/error.yaml#/ErrorResponseData"
